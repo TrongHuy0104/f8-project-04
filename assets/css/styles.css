@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-white: #fff;
+    --primary-color-orange: #ff5b2e;
+    --primary-color-black-blue: #000958;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -9,6 +15,7 @@ html {
 body {
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
+    background-color: #fffaf5;
 }
 
 h1,
@@ -26,4 +33,89 @@ textarea,
 button {
     font-size: inherit;
     font-family: inherit;
+}
+
+/* Common */
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    --height: 56px;
+    height: var(--height);
+    line-height: var(--height);
+    min-width: 117px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 99px;
+    border: 1px solid rgb(255, 91, 46, 0.6);
+    color: var(--primary-color-orange);
+    background-color: transparent;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    transition-property: color, border-color, background;
+    transition-duration: 0.2s;
+}
+
+.btn:hover {
+    color: var(--color-white);
+    border-color: var(--primary-color-orange);
+    background-color: var(--primary-color-orange);
+}
+
+/* Header */
+.header {
+    padding: 26px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link,
+.header-action__sign-in {
+    color: #5e6085;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1;
+    padding: 8px 18px;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+.navbar__item--active .navbar__link,
+.navbar__link:hover,
+.header-action__sign-in:hover {
+    text-shadow: 1px 0 0 var(--primary-color-black-blue);
+    color: var(--primary-color-black-blue);
+}
+
+.header-action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__sign-up {
+    --height: 50px;
+    color: var(--primary-color-black-blue);
+    border-color: rgb(0, 9, 88, 0.7);
+}
+
+.header-action__sign-up:hover {
+    border-color: var(--primary-color-black-blue);
+    background-color: var(--primary-color-black-blue);
 }
