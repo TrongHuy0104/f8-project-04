@@ -1245,3 +1245,127 @@ a {
     line-height: 1.71;
     margin-top: 16px;
 }
+
+/* Footer */
+
+.footer {
+    background: linear-gradient(to right, #fff6ed 44%, transparent 42%);
+}
+
+.footer__inner {
+    display: flex;
+}
+
+.footer__left {
+    width: 43%;
+    flex-shrink: 0;
+    padding: 114px 0 148px;
+}
+
+.footer__right {
+    flex: 1;
+}
+
+.subscribe-form {
+    width: 268px;
+    height: 46px;
+    border-radius: 99px;
+    border: 1px solid rgba(255, 91, 46, 0.25);
+    background: rgb(255, 255, 255, 0.6);
+    display: flex;
+    margin: 35px 0 68px;
+}
+
+.subscribe-form__input {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    border: none;
+    outline: none;
+    padding: 0 22px;
+}
+.subscribe-form__input::placeholder {
+    color: var(--secondary-color-light-blue);
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.17;
+}
+
+.subscribe-form__submit {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--primary-color-orange);
+    box-shadow: 0px 15px 28px -7px rgba(255, 91, 46, 0.3);
+    flex-shrink: 0;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 1px;
+}
+
+.subscribe-form__submit:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.footer__heading {
+    color: var(--primary-color-black-blue);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem;
+    margin-bottom: 14px;
+}
+
+.footer__socials {
+    display: flex;
+    margin-top: 16px;
+    column-gap: 16px;
+}
+
+.footer__social-link {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color-black-blue);
+    transition: box-shadow 0.2s;
+}
+
+.footer__social-link:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.footer__row {
+    padding: 52px 0 52px 120px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 58px 137px;
+}
+
+.footer__link {
+    color: var(--secondary-color-light-blue);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__copyright {
+    color: var(--secondary-color-light-blue);
+    opacity: 0.5;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.17;
+    padding-left: 12px;
+}
